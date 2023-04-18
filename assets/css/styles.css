@@ -1,6 +1,23 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+}
+
 .textoDigimon{
     background-color: pink;
     color: green;
-    font-size: 20px;
+    font-size: 40px;
 
 }
+
+.nav-link{
+    font-size: 25px;
+}
+
+.orderPoster {
+    padding: 20px;
+    border-radius: 30px;
+    transition: 2s;
+    width: 240px;
+    height: 323px;
+    filter: drop-shadow(8px 8px 8px black);
+  }

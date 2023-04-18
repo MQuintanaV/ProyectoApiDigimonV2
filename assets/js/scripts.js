@@ -104,7 +104,7 @@ let listaDigimon = () => {
                 // el contenido del link es el nombre del digimon
                 elLink.innerHTML = data[i].name;
                 // le asociamos al link el atributo onclick, para que invoque la funcion ocultarDivs 
-                elLink.setAttribute('onmouseover', 'ocultarDivs('+i+')');
+                elLink.setAttribute('onclick', 'ocultarDivs('+i+')');
 
 
                 
@@ -118,6 +118,7 @@ let listaDigimon = () => {
                 let unDiv = document.createElement('div');
                 // le asignamos al div el número de iteración como id
                 unDiv.id = i;
+                unDiv.classList.add ("orderPoster") ;
                 // agregamos al div recien creado tanto los parrafos, como la imagen y la regla 
                 //unDiv.appendChild(unParrafo);
                 unDiv.appendChild(elLink);
@@ -172,6 +173,7 @@ let listaDigimon = () => {
 
 let ocultarDivs = (elid)=>{
     losDivs = document.getElementsByTagName('div');
+    const nav = document.getElementById ('menuLista');
 
     //recorremos los divs y los ocultamos
     for (let i =0; i < losDivs.length; i++){
@@ -182,4 +184,5 @@ let ocultarDivs = (elid)=>{
 
     // hacemos visible el div al que le enviamos el id, al que le hice click
     losDivs[elid].style.display = 'block';
+    nav.style.display='block';
 }
