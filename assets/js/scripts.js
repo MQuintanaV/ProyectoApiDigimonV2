@@ -93,6 +93,9 @@ let listaDigimon = () => {
                 let otroParrafo = document.createElement('p');
                 // le agrego contenido al parrado, especificamente, el nivel del digimon
                 otroParrafo.innerHTML = data[i].level;  
+                // crea clase a p//
+                otroParrafo.classList.add ("otroParrafoJs") ;            
+
                 //agregamos al body la etiqueta de imagen que acabamos de crear
                 // document.body.appendChild(otroParrafo);   
 
@@ -108,8 +111,7 @@ let listaDigimon = () => {
 
 
                 
-                // creamos una horizontal rule desde js
-                let unaRegla = document.createElement('hr');
+               
                 // agregamos al body la etiqueta de horizontal rule
                 // document.body.appendChild(unaRegla);
 
@@ -118,13 +120,15 @@ let listaDigimon = () => {
                 let unDiv = document.createElement('div');
                 // le asignamos al div el número de iteración como id
                 unDiv.id = i;
-                unDiv.classList.add ("orderPoster") ;
+                //creacion de clase al unDiv llamado orderPoster
+                unDiv.classList.add ("orderPoster") ;            
                 // agregamos al div recien creado tanto los parrafos, como la imagen y la regla 
                 //unDiv.appendChild(unParrafo);
                 unDiv.appendChild(elLink);
                 unDiv.appendChild(unaImagen);
                 unDiv.appendChild(otroParrafo);
-                unDiv.appendChild(unaRegla);
+
+                
 
                 // agregamos el div recien creado y todos sus elementos hijos al body
                 // document.body.appendChild(unDiv);
