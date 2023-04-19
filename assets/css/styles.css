@@ -65,7 +65,7 @@ body {
 }
 
 nav {
-    background-image: url(/img/banner1.jpg);
+    background-image: url(/assets/img/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
